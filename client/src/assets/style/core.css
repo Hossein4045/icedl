@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+@import "tailwindcss";
+
+@layer {
+    body{
+        user-select: none; 
+        @apply bg-conic-180 from-indigo-800 via-pink-50 to-pink-700
+    }
+    .font1{
+        font-family: "Special Gothic Condensed One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    
+    }
+    .font2{
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;    }
+    .font3{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .font4{
+        font-family: "Playwrite RO", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+}
+
+
+/* loading==================================================== */
+.loader {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    border: 3px solid #1c398e;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    content: '';
+    box-sizing: border-box;
+    width: 8px;
+    height: 24px;
+    background: #1c398e;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -14px;
+    left: 53px;
+    border-radius: 3px;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: translate(-10px, -10px);
+    }
+    25% {
+      transform: translate(-10px, 10px);
+    }
+    50% {
+      transform: translate(10px, 10px);
+    }
+    75% {
+      transform: translate(10px, -10px);
+    }
+    100% {
+      transform: translate(-10px, -10px);
+    }
+  }
+      
+/* loading==================================================== */
